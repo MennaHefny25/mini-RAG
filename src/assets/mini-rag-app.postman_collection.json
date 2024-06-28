@@ -36,7 +36,7 @@
 						{
 							"key": "file",
 							"type": "file",
-							"src": "/C:/mini-RAG/wiki.txt"
+							"src": "/C:/Users/Menna/Downloads/9-data-science-project-ideas-to-jump-start-your-portfolio.pdf"
 						}
 					]
 				},
@@ -50,6 +50,36 @@
 						"v1",
 						"data",
 						"upload",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "process",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"file_id\": \"pra2o5mfq223_9datascienceprojectideastojumpstartyourportfolio.pdf\",\r\n    \"chunk_size\": 400,\r\n    \"overlap_size\": 20\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{api}}/api/v1/data/process/1",
+					"host": [
+						"{{api}}"
+					],
+					"path": [
+						"api",
+						"v1",
+						"data",
+						"process",
 						"1"
 					]
 				}
