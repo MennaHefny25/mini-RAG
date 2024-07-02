@@ -3,7 +3,7 @@ from typing import Optional
 from bson.objectid import ObjectId
 
 class Project(BaseModel):
-    _id: Optional[ObjectId]
+    id: Optional[ObjectId] = Field(None, alias="_id") # '_' pydantic considers it private attribute
     project_id: str = Field(..., min_length=1)
 
     # Custom validation
