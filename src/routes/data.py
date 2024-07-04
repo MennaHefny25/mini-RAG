@@ -86,7 +86,7 @@ async def upload_data(
 async def process_endpoint(
     request: Request, project_id: str, process_request: ProcessRequest
 ):
-    file_id = process_request.file_id
+    # file_id = process_request.file_id
     chunk_size = process_request.chunk_size
     overlap_size = process_request.overlap_size
     do_reset = process_request.do_reset
@@ -102,7 +102,7 @@ async def process_endpoint(
 
     file_chunks = process_controller.process_file_content(
         file_content=file_content,
-        file_id=file_id,
+        # file_id=file_id,
         chunk_size=chunk_size,
         overlap_size=overlap_size,
     )
