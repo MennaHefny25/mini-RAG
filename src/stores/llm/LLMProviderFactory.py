@@ -1,7 +1,7 @@
 from .LLMEnums import LLMEnums
 from .provides import OpenAIProvider, CoHereProvider
 
-class LLMProviderFactory():
+class LLMProviderFactory:
     def __init__(self, config):
         self.config = config
 
